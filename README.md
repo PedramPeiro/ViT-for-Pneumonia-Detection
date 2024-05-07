@@ -1,2 +1,9 @@
-# ViT-for-Pneumonia-Detection-
-This repository contains the code and associated materials for our research on enhancing pneumonia detection from chest X-ray images through Vision Transformers (ViTs) combined with thresholding techniques, offering an innovative approach over traditional CNNs.
+# ViT for Pneumonia Detection
+This project investigates the use of Vision Transformers (ViTs) for detecting pneumonia from chest X-ray images as an alternative to traditional Convolutional Neural Networks (CNNs). By leveraging the transformer architecture, ViTs can model long-range pixel dependencies more effectively, potentially enhancing classification performance. The goal is to improve diagnostic accuracy in pneumonia detection, especially in areas with limited medical resources.
+
+## Code Files
+Distributing_Data.py: This Python script handles the distribution of chest X-ray images into training, testing, and validation datasets. It ensures that the data is evenly split according to specified proportions and prepares the data for the modeling process.
+Data_Analysis.ipynb: A Jupyter notebook used for initial data analysis and preprocessing. This includes visualizing data distributions, applying transformations for data normalization, and performing augmentations to increase the robustness of the models against overfitting.
+Reproduction_CNN_model.ipynb: This notebook contains the implementation of a traditional CNN model as a baseline for performance comparison. It includes the training, validation, and testing of the CNN model using the preprocessed data.
+ViT_Conventional_Model.ipynb: A notebook that implements the Vision Transformer model for image classification. This includes setting up the transformer architecture, training the model on chest X-ray images, and evaluating its performance against the CNN baseline.
+ViT_with_Filters.ipynb: This notebook explores enhancements to the Vision Transformer model by integrating thresholding techniques. It examines how different preprocessing methods can improve the model's ability to detect pneumonia from X-ray images, comparing these results with the conventional ViT model.
